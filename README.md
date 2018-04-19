@@ -85,3 +85,34 @@ amyShieh('a','l','i','v','e');
 ```
 
     rest运算符和对象扩展运算符都是三个点（...）。具体区别看例子。rest就是除去已知的固定参数，剩余的就是rest的。
+    
+####字符串模板
+```
+    
+let name = 'amy';
+console.log(`hello alive${name}!`);
+
+let decorate = 'alive';
+let repDecorate = decorate.repeat(5);
+console.log(decorate.includes('live')); //true
+console.log(decorate.startsWith('live')); //false
+console.log(decorate.endsWith('a')); //false
+console.log(repDecorate);
+```
+
+####数值类型
+```
+    // binary
+    // 二进制和八进制的表示都是以0开头，二进制是binary, 八进制是Octonary
+    let binary = 0b010101;
+    let octonary = 0o666;
+    console.log(binary);
+    console.log(octonary);
+    console.log(Number.isFinite(binary));
+    console.log(Number.isInteger(binary));
+    console.log(Number.isInteger(binary));
+    const maxNum = Number.MAX_SAFE_INTEGER;
+    const minNum = Number.MIN_SAFE_INTEGER;
+    console.log(maxNum);
+    console.log(minNum);
+```
