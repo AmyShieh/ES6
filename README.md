@@ -119,11 +119,50 @@ console.log(repDecorate);
 
 ####数组知识
 1.  Array.from
-```
-    let obj
-```
 2.  Array.of
 3.  arr.find
 4.  arr.fill
 5.  for of
 6.  enteries
+
+```
+    
+let obj = {
+    '0': 'alive',
+    '1': 'amy',
+    '2': 'amyShieh',
+    length: 3
+}
+
+let objToArr = Array.from(obj);
+console.log(objToArr);
+let arrOf = Array.of('alive','amy');
+console.log(arrOf);
+
+let arrFind = objToArr.find(function (value,index,arr) {
+    console.log(value);
+    console.log(index);
+    return value == 'alive'
+});
+
+let arrFill = objToArr.concat([]).fill('brave',0,1);
+console.log(arrFill);
+console.log(objToArr);
+
+for(let value of arrFill) {
+    console.log(value);
+}
+
+
+for(let index of arrFill.keys()) {
+    console.log(index);
+}
+
+for(let item of arrFill.entries()) {
+    console.log(item);
+}
+
+for(let [index,value] of arrFill.entries()) {
+    console.log(index+': '+ value);
+}
+```
