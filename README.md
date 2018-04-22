@@ -116,3 +116,14 @@ console.log(repDecorate);
     console.log(maxNum);
     console.log(minNum);
 ```
+
+####数组知识
+1.  Array.from
+```
+    let obj
+```
+2.  Array.of
+3.  arr.find
+4.  arr.fill
+5.  for of
+6.  enteries
