@@ -165,4 +165,33 @@ for(let item of arrFill.entries()) {
 for(let [index,value] of arrFill.entries()) {
     console.log(index+': '+ value);
 }
+
+const objParse = {
+    a: 'amy',
+    b: 'alive'
+};
+function consoleObj({a,b=1}) {
+    console.log(a,b);
+}
+
+consoleObj(objParse);
+
+console.log('a' in objParse);
+console.log('c' in objParse);
+
+const emptyArr = [0,,,];
+console.log(emptyArr.length);
+console.log(0 in emptyArr);
+
+const arrForEach = ['alive','amy','shieh'];
+arrForEach.forEach((val,index) => console.log(val,index))
+arrForEach.filter((val,index) => console.log(val,index))
+arrForEach.some((val,index) => console.log(val,index))
+arrForEach.map((val,index) => console.log(val,index))
+console.log(arrForEach.map((val,index) => 'test'));
 ```
+
+####箭头函数
+
+箭头函数没啥总结的，注意一点就是箭头函数里面不能有new,就是说 不能有构造函数。
+

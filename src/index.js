@@ -104,3 +104,28 @@ for(let [index,value] of arrFill.entries()) {
     console.log(index+': '+ value);
 }
 
+console.log('-----------------');
+const objParse = {
+    a: 'amy',
+    b: 'alive'
+};
+function consoleObj({a,b=1}) {
+    console.log(a,b);
+}
+
+consoleObj(objParse);
+
+console.log('a' in objParse);
+console.log('c' in objParse);
+
+const emptyArr = [0,,,];
+console.log(emptyArr.length);
+console.log(0 in emptyArr);
+
+const arrForEach = ['alive','amy','shieh'];
+arrForEach.forEach((val,index) => console.log(val,index))
+arrForEach.filter((val,index) => console.log(val,index))
+arrForEach.some((val,index) => console.log(val,index))
+arrForEach.map((val,index) => console.log(val,index))
+console.log(arrForEach.map((val,index) => 'test'));
+
