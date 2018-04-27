@@ -129,3 +129,35 @@ arrForEach.some((val,index) => console.log(val,index))
 arrForEach.map((val,index) => console.log(val,index))
 console.log(arrForEach.map((val,index) => 'test'));
 
+console.log('key值得构建');
+
+let key = 'name';
+let keyObj = {
+    [key]: 'amy'
+}
+console.log(keyObj);
+
+console.log('对比两个对象是否相等');
+console.log('===同值相等， is严格相等');
+
+let eqObj1 = {name:'amy'}
+let eqObj2 = {name:'amy'}
+console.log(Object.is(eqObj1,eqObj2));
+console.log(Object.is(eqObj1.name,eqObj2.name));
+
+console.log('-------Symbol------');
+
+let symbolObj = {
+    name: 'amy',
+    skill: 'handMade'
+}
+let age = Symbol();
+symbolObj[age] = 23;
+
+console.log(symbolObj);
+
+for (let item in symbolObj) {
+    console.log(item);
+}
+
+
